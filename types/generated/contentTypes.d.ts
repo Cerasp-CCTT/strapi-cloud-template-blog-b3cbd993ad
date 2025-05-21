@@ -598,6 +598,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
 export interface ApiSubscriberSubscriber extends Struct.CollectionTypeSchema {
   collectionName: 'subscribers';
   info: {
+    description: '';
     displayName: 'Subscribers';
     pluralName: 'subscribers';
     singularName: 'subscriber';
@@ -625,7 +626,6 @@ export interface ApiSubscriberSubscriber extends Struct.CollectionTypeSchema {
     Subscribed: Schema.Attribute.Boolean &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<true>;
-    SubscribedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
