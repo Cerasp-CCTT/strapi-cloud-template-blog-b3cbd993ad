@@ -19,12 +19,7 @@
     "Name": {
       "type": "string",
       "required": true,
-      "unique": true
-    },
-    "Subscribed": {
-      "type": "boolean",
-      "default": true,
-      "required": true
+      "unique": false
     }
   }
 }
