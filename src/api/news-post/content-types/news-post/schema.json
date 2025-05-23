@@ -4,16 +4,27 @@
   "info": {
     "singularName": "news-post",
     "pluralName": "news-posts",
-    "displayName": "News-Posts"
+    "displayName": "News-Posts",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
   },
   "attributes": {
     "Title": {
       "type": "string",
       "required": true,
-      "maxLength": 50
+      "maxLength": 50,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
