@@ -562,6 +562,7 @@ export interface ApiEquipmentEquipment extends Struct.CollectionTypeSchema {
         };
       }>;
     publishedAt: Schema.Attribute.DateTime;
+    site: Schema.Attribute.Enumeration<['ALL', 'JAC', 'GG', 'CERASP']>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

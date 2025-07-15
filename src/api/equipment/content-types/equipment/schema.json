@@ -51,6 +51,15 @@
           "localized": true
         }
       }
+    },
+    "site": {
+      "type": "enumeration",
+      "enum": [
+        "ALL",
+        "JAC",
+        "GG",
+        "CERASP"
+      ]
     }
   }
 }
