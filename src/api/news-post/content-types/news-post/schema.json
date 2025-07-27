@@ -25,6 +25,15 @@
           "localized": true
         }
       }
+    },
+    "LinkedIn": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
